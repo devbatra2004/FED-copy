@@ -1,0 +1,10 @@
+const songs = [
+  { 
+    id: 1, 
+    title: "Song 1", 
+    artist: "Artist 1", 
+    src: "/path/to/your/local/folder/01.mp3", 
+    image: "https://www.musicgrotto.com/wp-content/uploads/2021/12/happy-girl-singing-with-music-notes-in-background-graphic-art.jpg"
+  },
+  // ... other song entries
+];
