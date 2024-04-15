@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    color: blue;
+    text-decoration: underline;
+}
+h1:hover{
+    font-size: 50px;
+    color:red;
+    text-align: center;
+    background-color: yellow;
+}
+body{
+    background-color: pink;
+}
+button{
+    background-color: blueviolet;
+    size: 50px;
+}
+#dev{
+    color: brown;
+}
+.heading{
+    background-color: aquamarine;
+}
+#box{
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin:5px;
+    padding: 8px;
+    height: 100px;
+    width: 100px;
+}
+    </style>
+</head>
+<body>
+    <h1 id="dev">dom stands for - document object model.</h1>
+    <h2 class="heading">hiii! my name is dev batra </h><br>
+<p>hii! i am learning js</p>
+<p>2nd paragraph  hii! i am learning js</p>
+    <button>click me</button>
+    <!-- <div>
+    <h3>fruits</h3>
+    <ul>
+        <li>mango</li>
+        <li>orange </li>
+        <li>litchi</li>
+        <li>banana</li>
+
+    </ul>
+    </div> -->
+
+    <div id ="box" name="box1">
+        <P>hello</P>
+    </div>
+    <p class="para">new class</p>
+</body>
+<script>
+
+console.log("hiii! my name is dev");
+let heading = document.getElementById("dev");
+console.dir(heading);
+let heading2=document.getElementsByClassName("heading");
+console.dir(heading2);
+let paras=document.getElementsByTagName("p");
+console.dir(paras);
+console.log(paras);
+let element=document.querySelector("p");
+console.dir(element);
+let elements=document.querySelectorAll("p");
+console.dir(elements);
+console.log(elements);
+
+// let div=document.querySelector("div");
+// console.log(div);
+
+
+//dom manipulation
+// 1) selecting with id= document.getElementById("my id");
+// 2) selecting with class=document.getElementsByClassName("my class");
+// 3) selecting with the tag -document.getElementByTagName("p");
+
+// best method is query selector- isme kuch bhi pass kr skte hai id bhi, class bhi or tag name bhi or apne 
+// aap select ho jaega
+
+//  jab kisi id wala element exist nhi krta toh null likha aata hai
+// jab kisi class wala element exist nhi krta toh empty html collection  aata hai
+// jab sare elements access krne hai same name ke toh - querySelectorAll use krenge.
+//query selector ki class mai (.) se access krenge 
+// query selector ki tag mai (#) se access krenge 
+
+//there are 3 terms of tree of dom
+//parents
+//child
+//siblings
+
+
+
+// for attributes
+let div2=document.querySelector("div");
+console.log(div2);
+let name=div2.getAttribute("name");
+console.log(name);
+let id=div2.getAttribute("id");
+console.log(id);
+
+//setting attribute
+let para=document.querySelector("p");
+console.log(para.setAttribute("class","newcl"));
+
+let div3=document.querySelector(" box")
+</script>
+</html>

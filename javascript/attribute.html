@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            border:3px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: aquamarine;
+            color: blueviolet;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="box" name="dev">this is a div</div>
+    <p class="para">this is a simple line</p>
+    <script>
+        let div=document.querySelector("div");
+        console.log(div);
+        let id=div.getAttribute("id");
+        console.log(id);
+        let name=div.getAttribute("name");
+        console.log(name);
+        // accesing the paragraph
+        let para=document.querySelector("p");
+        let p=para.getAttribute("class");
+        console.log(p);
+
+        // setting the attribute
+        console.log(para.setAttribute("class","newclass"));
+// dom manipulation
+// attributes:-
+// 1) getAttribute(attr)
+// 2) setAttribute(attr,value)
+
+// there is a special attribute which is used for style.
+// that is - node.style
+div.style.fontSize="30px";
+div.innerHTML="hii! my name is dev";
+
+    </script>
+    
+</body>
+</html>
